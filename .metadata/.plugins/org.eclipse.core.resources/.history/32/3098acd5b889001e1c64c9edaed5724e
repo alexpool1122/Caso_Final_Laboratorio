@@ -1,0 +1,13 @@
+package com.evaluacion.model;
+
+import java.util.Date;
+
+public class Reserva {
+	private int id;
+    private int cliente_id;
+    private int habitacion_id;
+    private Date fecha_inicio;
+    private Date fecha_fin;
+    private double total;
+    private String estado;
+}

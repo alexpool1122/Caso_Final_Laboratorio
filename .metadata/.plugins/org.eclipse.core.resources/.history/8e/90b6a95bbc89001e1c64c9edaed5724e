@@ -1,0 +1,62 @@
+package com.evaluacion.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "habitaciones")
+public class Habitacion {
+	private int idHabitacion;
+    private int numero;
+    private String tipo;
+    private double precio;
+    
+	public Habitacion(int idHabitacion, int numero, String tipo, double precio) {
+		this.idHabitacion = idHabitacion;
+		this.numero = numero;
+		this.tipo = tipo;
+		this.precio = precio;
+	}
+
+	public Habitacion() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "Habitacion [idHabitacion=" + idHabitacion + ", numero=" + numero + ", tipo=" + tipo + ", precio="
+				+ precio + "]";
+	}
+
+	public int getIdHabitacion() {
+		return idHabitacion;
+	}
+
+	public void setIdHabitacion(int idHabitacion) {
+		this.idHabitacion = idHabitacion;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+}

@@ -1,0 +1,8 @@
+package com.evaluacion.model;
+
+public class Habitacion {
+	private int id;
+    private int numero;
+    private String tipo;
+    private double precio;
+}
